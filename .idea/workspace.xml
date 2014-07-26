@@ -125,6 +125,7 @@
         <option value="$PROJECT_DIR$/builds/development/js/data.JSON" />
         <option value="$PROJECT_DIR$/gruntfile.js" />
         <option value="$PROJECT_DIR$/builds/development/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -188,10 +189,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -543,6 +540,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1122">
           <caret line="46" column="57" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03935185" vertical-offset="0" max-vertical-offset="432">
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
           <folding />
         </state>
       </provider>
