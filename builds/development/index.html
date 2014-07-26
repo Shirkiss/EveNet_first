@@ -1,0 +1,433 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html lang="en" ng-app="myApp">
+<head>
+<title>EveNet - Your Event Your Life</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="js/script.js"></script>
+<script type="text/javascript" src="../../components/scripts/jquery.min.js"></script>
+<script type="text/javascript" src="../../components/scripts/angular.min.js"></script>
+<script type="text/javascript" src="../../components/scripts/angular-route.min.js"></script>
+<script type="text/javascript" src="../../components/scripts/controllers.js"></script>
+<script src="http://localhost:35729/livereload.js"></script>
+
+	 	<!---strat-slider---->
+	    <link rel="stylesheet" type="text/css" href="css/slider.css" />
+		<script type="text/javascript" src="../../components/scripts/modernizr.custom.28468.js"></script>
+		<script type="text/javascript" src="../../components/scripts/jquery.cslider.js"></script>
+			<script type="text/javascript">
+				$(function() {
+				
+					$('#da-slider').cslider({
+						autoplay	: true,
+						bgincrement	: 450
+					});
+				
+				});
+			</script>
+		<!---//strat-slider---->
+		 <!-- scroll -->
+		 <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		 <!-- //scroll -->
+
+</head>
+<body>
+	<!-- start slider -->
+<div class="slider_bg">
+			<!-- start header -->
+	<div class="wrap">
+			<div class="header">
+
+                <!--<searchbox>-->
+
+                <section class="searchbox" ng-controller="MyController">
+                    <form class="search" method="post" action="index.html" >
+                        <input ng-model="friendquery" type="text" name="q" placeholder="Search..." />
+                        <ul class="results" >
+                            <li ng-repeat="item in friends | limitTo: 4 | filter: friendquery">
+                                <a href="{{item.pageURL}}">
+                                    <h2>{{item.firstName +' ' + item.lastName}}</h2>
+                                </a>
+                            </li>
+                        </ul>
+                    </form>
+                </section>
+
+
+		<!-- start top-nav-->
+            <div class="h_right">
+                <ul class="menu">
+                    <li class="active"><a  href="#home">Home</a></li>
+                    <li><a href="#aboutus" class="scroll">About Us</a></li>
+                    <li><a href="#design" class="scroll">Design</a></li>
+                    <li><a href="#how" class="scroll">How</a></li>
+                    <li><a href="#friends" class="scroll">Friends</a></li>
+                    <li class="last"><a href="#contact"  class="scroll">Contact</a></li>
+                </ul>
+                <!-- start smart_nav * -->
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a  href="#home">Home</a></li>
+                        <li class="nav-item"><a href="#aboutus" class="scroll">About Us</a></li>
+                        <li class="nav-item"><a href="#design" class="scroll">Design</a></li>
+                        <li class="nav-item"><a href="#how" class="scroll">How</a></li>
+                        <li class="nav-item"><a href="#friends" class="scroll">Friends</a></li>
+                        <li class="nav-item"><a href="#contact"  class="scroll">Contact</a></li>
+                        <div class="clear"></div>
+                    </ul>
+                </nav>
+	        <!--<script type="text/javascript" src="../../components/scripts/responsive.menu.js"></script>-->
+
+
+
+			<!-- end smart_nav * -->
+		</div>
+		<div class="clear"></div>
+
+			</div>
+			</div>
+			<!---//End-header--->
+<!-- start main -->
+        <!---start-da-slider----->
+        <div id="da-slider" class="da-slider">
+            <div class="da-slide">
+                <p>Welcome To EveNet!</p>
+                <h2>your life! your EveNet</h2>
+                <p class="a"><a href="#">START EXPLORE</a></p>
+            </div>
+            <div class="da-slide">
+                <p>Welcome To EveNet!</p>
+                <h2>your life! your EveNet</h2>
+                <p class="a"><a href="#">START EXPLORE</a></p>
+            </div>
+            <div class="da-slide">
+                <p>Welcome To EveNet!</p>
+                <h2>your life! your EveNet</h2>
+                <p class="a"><a href="#">START EXPLORE</a></p>
+            </div>
+            <div class="da-slide">
+                <p>Welcome To EveNet!</p>
+                <h2>your life! your EveNet</h2>
+                <p class="a"><a href="#">START EXPLORE</a></p>
+            </div>
+            <nav class="da-arrows">
+                <span class="da-arrows-prev"></span>
+                <span class="da-arrows-next"></span>
+            </nav>
+        </div>
+        <!---//End-da-slider----->
+ 		</div>
+
+		  <div class="aboutus" id="aboutus">
+              <div class="wrap">
+                  <h3>ABOUT US</h3>
+                  <p>EveNet helping you make the event YOURS</p>
+                  <div class="col_1_of_3 span_1_of_3">
+                      <img src="images/connection.gif" alt=""/>
+                      <h4><a href="#">Connection</a></h4>
+                      <p>Connect to your friends through all the social media platform: Facebook, Twitter, Google+, Contact list, Emails est.</p>
+                  </div>
+                  <div class="col_1_of_3 span_1_of_3">
+                      <img src="images/design.gif" alt=""/>
+                      <h4><a href="#">Design</a></h4>
+                      <p>Design an EveNet site for your event. <br>You can add to your site app from our AppStore: Blogs, Forums, Full-Car, RSVP est.</p>
+                  </div>
+                  <div class="col_1_of_3 span_1_of_3">
+                      <img src="images/organize.gif" alt=""/>
+                      <h4><a href="#">Organize</a></h4>
+                      <p>EveNet help you organize the event by update all the relevant about the meetings, the expenses and the invitees</p>
+                  </div>
+                  <div class="clear"></div>
+              </div>
+          </div>
+    <!--<start design>-->
+        <div class="design" id="design">
+            <div class="wrap">
+                <h3>Design Your EveNet</h3>
+                <p>Choose a template and start building your own EveNet</p>
+                <div class="col_1_of_3 span_1_of_3">
+                    <div class="view view-fourth">
+                        <img src="images/tem1.png">
+                        <div class="mask">
+                            <h2>Wedding</h2>
+                            <p>Make your event special & unforgettable</p>
+                            <a href="#" class="info">Read More</a>
+                        </div>
+                    </div>
+                    <h4><a href="#">Private Events</a></h4>
+                    <p>Price: Free</p>
+                </div>
+                <div class="col_1_of_3 span_1_of_3">
+                    <div class="view view-fourth">
+                        <img src="images/tem2.png">
+                        <div class="mask">
+                            <h2>Live Show</h2>
+                            <p>Give your audience a stage to talk and share everything about the show.</p>
+                            <a href="#" class="info">Read More</a>
+                        </div>
+                    </div>
+                    <h4><a href="#">Live Shows</a></h4>
+                    <p>Price: Free</p>
+                </div>
+                <div class="col_1_of_3 span_1_of_3">
+                    <div class="view view-fourth">
+                        <img src="images/tem3.png">
+                        <div class="mask">
+                            <h2>Music Festival</h2>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                            <a href="#" class="info">Read More</a>
+                        </div>
+                    </div>
+                    <h4><a href="#">Music Events</a></h4>
+                    <p>Price: Free</p>
+                </div>
+                <div class="col_1_of_3 span_1_of_3">
+                    <div class="view view-fourth">
+                        <img src="images/tem4.png">
+                        <div class="mask">
+                            <h2>Designer clothing sale</h2>
+                            <p>We bring you the best we could find!</p>
+                            <a href="#" class="info">Read More</a>
+                        </div>
+                    </div>
+                    <h4><a href="#">Boutique Events</a></h4>
+                    <p>Price: Free</p>
+                </div>
+                <div class="col_1_of_3 span_1_of_3">
+                    <div class="view view-fourth">
+                        <img src="images/tem5.png">
+                        <div class="mask">
+                            <h2>Film Festival</h2>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                            <a href="#" class="info">Read More</a>
+                        </div>
+                    </div>
+                    <h4><a href="#">Film Festival</a></h4>
+                    <p>Price: Free</p>
+                </div>
+                <div class="col_1_of_3 span_1_of_3">
+                    <div class="view view-fourth">
+                        <img src="images/tem6.png">
+                        <div class="mask">
+                            <h2>Luxury Party</h2>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                            <a href="#" class="info">Read More</a>
+                        </div>
+                    </div>
+                    <h4><a href="#">Luxury Party</a></h4>
+                    <p>Price: Free</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+   		 <!---start-about---->
+    <!---start-how tp start---->
+        <div class="how" id="how">
+            <div class="wrap">
+                <h3>How to start</h3>
+                <p class="a">EveNet help you throughout all the process to make an unforgettable event</p>
+                <!---start-how-time-line---->
+                <div class="how-time-line">
+                    <li>
+                        <div class="cbp_tmicon img1"> </div>
+                        <div class="cbp_tmlabel">
+                            <h2>JULY 2010</h2>
+                            <h2>Our Humble Beginnings</h2>
+                            <p>Proin iaculis purus consequat sem cure  digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cbp_tmicon1 img2"> </div>
+                        <div class="cbp_tmlabel cbp_tmlabel1">
+                            <h2>JANUARY 2011</h2>
+                            <h2>Facing Startup Battles </h2>
+                            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+                        </div>
+                    </li><br />
+                    <li>
+                        <div class="cbp_tmicon2 img3"> </div>
+                        <div class="cbp_tmlabel">
+                            <h2>DECEMBER 2012</h2>
+                            <h2>Enter The Dark Days </h2>
+                            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cbp_tmicon3 img4"> </div>
+                        <div class="cbp_tmlabel cbp_tmlabel1">
+                            <h2>FEBRUARY 2014</h2>
+                            <h2>Our Triumph </h2>
+                            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cbp_tmicon4 img5"> </div>
+                    </li>
+                    <div class="clear"> </div>
+                </div>
+            </div>
+        </div>
+    <!---//end-how---->
+ 			<!---//end-about---->     
+           <!----start-friends---->
+				<div class="friends" id="friends">
+					<div class="wrap"> 
+						<div class="friends-head">
+							<h3>our amazing team</h3>
+							<p>Proin iaculis purus consequat sem cure.</p>
+						</div>
+						<div class="friends-head-grids">
+							<div class="friends-head-grid">
+								<img src="images/team-member1.jpg" alt="" />
+								<h4>Kimberly Thompson</h4>
+								<h5>Marketer</h5>
+								<ul class="top-social-icons">
+									<li><a class="twitter simptip-position-bottom simptip-movable" data-tooltip="twitter" href="#"> </a></li>
+									<li><a class="facebook simptip-position-bottom simptip-movable" data-tooltip="Facebook" href="#"> </a></li>
+									<li><a class="pin simptip-position-bottom simptip-movable" data-tooltip="pintrest" href="#"> </a></li>
+									<div class="clear"> </div>
+								</ul>
+							</div>
+							<div class="friends-head-grid">
+								<img src="images/team-member2.jpg" alt="" />
+								<h4>Rico Massimo</h4>
+								<h5>Coder</h5>
+								<ul class="top-social-icons">
+									<li><a class="twitter simptip-position-bottom simptip-movable" data-tooltip="twitter" href="#"> </a></li>
+									<li><a class="facebook simptip-position-bottom simptip-movable" data-tooltip="Facebook" href="#"> </a></li>
+									<li><a class="pin simptip-position-bottom simptip-movable" data-tooltip="pintrest" href="#"> </a></li>
+									<div class="clear"> </div>
+								</ul>
+							</div>
+							<div class="friends-head-grid">
+								<img src="images/team-member3.jpg" alt="" />
+								<h4>Uku Mason</h4>
+								<h5>Graphic Designer</h5>
+								<ul class="top-social-icons">
+									<li><a class="twitter simptip-position-bottom simptip-movable" data-tooltip="twitter" href="#"> </a></li>
+									<li><a class="facebook simptip-position-bottom simptip-movable" data-tooltip="Facebook" href="#"> </a></li>
+									<li><a class="pin simptip-position-bottom simptip-movable" data-tooltip="pintrest" href="#"> </a></li>
+									<div class="clear"> </div>
+								</ul>
+							</div>
+							<div class="clear"> </div>
+						</div>
+						<p class="friends-info">Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
+					</div>
+				</div>
+				<!----//End-team-members----> 
+				<!---strat-image-cursuals---->
+                  <div class="t-clients">
+                  	<div class="wrap"> 											 
+							<div class="nbs-flexisel-container"><div class="nbs-flexisel-inner"><ul class="flexiselDemo3 nbs-flexisel-ul" style="left: -253.6px; display: block;">					    					    					       
+							<li onclick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;"><img src="images/c3.png"></li><li onclick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;"><img src="images/c4.png"></li><li onclick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;"><img src="images/c1.png"></li><li onclick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;"><img src="images/c2.png"></li><li onclick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;"><img src="images/c3.png"></li><li onclick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;"><img src="images/c4.png"></li><li onclick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;"><img src="images/c1.png"></li><li onclick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;"><img src="images/c2.png"></li></ul><div class="nbs-flexisel-nav-left" style="top: 21.5px;"></div><div class="nbs-flexisel-nav-right" style="top: 21.5px;"></div></div></div> 
+							<div class="clear"> </div>      
+						  <!---strat-image-cursuals---->
+								<!--<script type="text/javascript" src="../../components/scripts/jquery.flexisel.js"></script>-->
+								<!---End-image-cursuals---->
+								<script type="text/javascript">
+								$(window).load(function() {
+								    $(".flexiselDemo3").flexisel({
+								        visibleItems: 5,
+								        animationSpeed: 1000,
+								        autoPlay: true,
+								        autoPlaySpeed: 3000,            
+								        pauseOnHover: true,
+								        enableResponsiveBreakpoints: true,
+								        responsiveBreakpoints: { 
+								            portrait: { 
+								                changePoint:480,
+								                visibleItems: 1
+								            }, 
+								            landscape: { 
+								                changePoint:640,
+								                visibleItems: 2
+								            },
+								            tablet: { 
+								                changePoint:768,
+								                visibleItems: 3
+								            }
+								        }
+								    });
+								});
+								</script>
+						<!---->
+				  <!---->
+				  </div>				
+			</div>
+             <div class="contact" id="contact">
+		  	<div class="wrap">
+		  		<h3>CONTACT US</h3>
+		  		<p class="a">Proin iaculis purus consequat sem cure.</p>
+				<div class="form">
+				     <div class="form-text">
+					    <input type="text" class="textbox" value="Your Name*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+						<input type="text" class="textbox" value="Your E-mail*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail';}">
+						<input name="Website" type="text" class="Subject" value="Website" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Website';}">
+					</div>
+						 <textarea placeholder="Your Message*"></textarea>
+						 <div class="clear"> </div>
+						 <input type="submit" value="SEND MESSAGE">					 
+				 </div>
+   		   </div>
+   		 </div>
+
+         <!----start-bottom-footer---->
+
+				<div class="bottom-footer">
+					<div class="wrap"> 
+						<div class="bottom-footer-left">
+							<p>&#169; Copyright 2014 Template by <a href="http://w3layouts.com/">W3layouts</a></p>
+						</div>
+						<div class="bottom-footer-center">
+							<ul class="bottom-social-icons">
+								<li><a class="bottom-twitter" href="#"> </a></li>
+								<li><a class="bottom-facebook" href="#"> </a></li>
+								<li><a class="bottom-pin" href="#"> </a></li>
+								<li><a class="bottom-google" href="#"> </a></li>
+								<div class="clear"> </div>
+							</ul>
+						</div>			  
+						<div class="clear"> </div>
+					</div>
+				</div>
+				<!----//End-bottom-footer---->
+ <!-- scroll_top_btn -->
+		<!--<script type="text/javascript" src="../../components/scripts/move-top.js"></script>-->
+		<!--<script type="text/javascript" src="../../components/scripts/easing.js"></script>-->
+		<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+
+		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+
+</body>
+</html>
